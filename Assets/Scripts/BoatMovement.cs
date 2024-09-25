@@ -5,7 +5,6 @@ public class BoatMovement : MonoBehaviour
 {
     private Rigidbody2D rigidbody;
     private Camera mainCam;
-    private float carSpeed = 25;
 
     private float leftLaneX = -2.0f;
     private float rightLaneX = 2.0f;
