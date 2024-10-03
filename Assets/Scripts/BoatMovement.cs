@@ -6,8 +6,8 @@ public class BoatMovement : MonoBehaviour
     private Rigidbody2D rigidbody;
     private Camera mainCam;
 
-    private float leftLaneX = -2.0f;
-    private float rightLaneX = 2.0f;
+    private float leftLaneX = -1.65f;
+    private float rightLaneX = 1.65f;
 
     private Vector2 targetPosition;
 

@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class RoadManager : MonoBehaviour
 {
-    public float speed = 5f;  // Speed at which the road moves
+    public static RoadManager Instance;
+    [SerializeField] public float speed = 5f;  // Speed at which the road moves
+
+    void Awake() {
+        Instance = this;
+    }
 
     void Update()
     {
@@ -16,5 +21,9 @@ public class RoadManager : MonoBehaviour
         {
             Destroy(gameObject);  // This will remove the old road sections
         }
+    }
+
+    public float GetSpeed() {
+        return speed;
     }
 }

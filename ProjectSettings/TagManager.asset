@@ -42,3 +42,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: GamePlay
+    uniqueID: 3906123561
+    locked: 0
+  - name: Game States
+    uniqueID: 4166175843
+    locked: 0
