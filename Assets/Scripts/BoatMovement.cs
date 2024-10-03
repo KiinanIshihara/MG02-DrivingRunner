@@ -7,7 +7,7 @@ public class BoatMovement : MonoBehaviour
     private Camera mainCam;
 
     private float leftLaneX = -1.65f;
-    private float rightLaneX = 1.65f;
+    private float rightLaneX = 1f;
 
     private Vector2 targetPosition;
 

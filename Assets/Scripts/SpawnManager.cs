@@ -17,7 +17,7 @@ public class SpawnManager : MonoBehaviour
     private float spawnIncreaseTimerMax = 10f;
     private float spawnIncreaseTimer;
     
-    [SerializeField] private float entitiesSpeed = 1;
+    private float entitiesSpeed = 5;
 
     private void Awake() {
         Instance = this;
@@ -44,10 +44,16 @@ public class SpawnManager : MonoBehaviour
             spawnIncreaseTimer -= Time.deltaTime;
         } else {
             spawnIncreaseTimer = spawnIncreaseTimerMax;
+            if(entitiesSpeed <= 8f) {
+                entitiesSpeed += 0.5f; 
+            }
             if (spawnTimerMax >= 0.7f) {
             spawnTimerMax -= 0.1f;
+            
             }
         }
+
+        Debug.Log(entitiesSpeed);
     }
 
     public void StartScript() {
